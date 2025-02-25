@@ -1,0 +1,27 @@
+<h2>Transacciones del Usuario {{ userId }}</h2>
+<form (ngSubmit)="createTransaction()">
+  <input [(ngModel)]="newTransaction.amount" name="amount" placeholder="Monto" required />
+  <select [(ngModel)]="newTransaction.type" name="type" required>
+    <option value="deposit">Depósito</option>
+    <option value="withdrawal">Retiro</option>
+  </select>
+  <button type="submit">Registrar Transacción</button>
+</form>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Monto</th>
+      <th>Tipo</th>
+      <th>Fecha</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let transaction of transactions">
+      <td>{{ transaction.id }}</td>
+      <td>{{ transaction.amount }}</td>
+      <td>{{ transaction.type }}</td>
+      <td>{{ transaction.created_at }}</td>
+    </tr>
+  </tbody>
+</table>

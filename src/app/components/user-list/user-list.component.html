@@ -1,0 +1,26 @@
+<h2>Lista de Usuarios</h2>
+<form (ngSubmit)="createUser()">
+  <input [(ngModel)]="newUser.name" name="name" placeholder="Nombre" required />
+  <input [(ngModel)]="newUser.email" name="email" placeholder="Email" required />
+  <button type="submit">Agregar Usuario</button>
+</form>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Email</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{ user.id }}</td>
+      <td>{{ user.name }}</td>
+      <td>{{ user.email }}</td>
+      <td>
+        <a [routerLink]="['/transactions', user.id]">Ver Transacciones</a>
+      </td>
+    </tr>
+  </tbody>
+</table>

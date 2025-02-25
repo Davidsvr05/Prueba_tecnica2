@@ -1,0 +1,48 @@
+/* Estilos globales */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Estilos para los enlaces */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para los botones */
+button {
+  cursor: pointer;
+}
+
+/* Estilos para los contenedores */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos para el menú de navegación */
+nav {
+  background-color: #007bff;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: white;
+  margin-right: 15px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,64 @@
+.transaction-list-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.transaction-form {
+  margin-bottom: 20px;
+}
+
+.transaction-form input,
+.transaction-form select {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.transaction-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.transaction-form button:hover {
+  background-color: #0056b3;
+}
+
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.transaction-table th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+}
+
+.transaction-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+
+.deposit {
+  color: #28a745; 
+}
+
+.withdrawal {
+  color: #dc3545; 
+}
